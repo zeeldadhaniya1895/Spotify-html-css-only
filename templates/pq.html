@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pq.css') }}">
+
+</head>
+<body>
+    <div class="main">
+        
+        <div class="sb">
+           
+            <div class="sb1">
+                <div class="nav_option" style="opacity: 1;">
+                    <i class="fa-solid fa-house" ></i>
+                    <a href="">Home</a>
+                </div>
+                <div class="nav_option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="">Search</a>
+                </div>
+            </div>
+            <div class="sb2">
+                <div class="opt">
+                    <div class="nav_option">
+                        <img src="{{ url_for('static', filename='images/library_icon.png') }}"></i>
+                        <a href="">Your Library</a>
+                    </div>
+                    <div class="icons" >
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="b1">
+                        <p class="b1p1">Create your first playlist</p>
+                        <p class="b2p2">It's easy we will help you</p>
+                        <button class="badge">Create playlist</button>
+                    </div>
+                   
+
+                </div>
+                <div class="box">
+
+                    <div class="b1">
+                        <p class="b1p1">Let's find some podcast to follow</p>
+                        <p class="b2p2">We will keep you update on new episode</p>
+                        <button class="badge">Browse Podcast</button>
+                    </div>
+                   
+
+                </div>
+            </div>
+
+        </div>
+        <div class="mc">
+            <div class="header">
+                <div class="hi">
+                    <img src="{{ url_for('static', filename='images/backward_icon.png') }}" alt="backward_icon">
+                    <img src="{{ url_for('static', filename='images/forward_icon.png') }}" class="hide" alt="forward_icon">
+                </div>
+                <div class="hb">
+                    <button class="badge hbb hide">Explore Premium</button>
+                <button class="badge hbb " style="background-color: black;color:white;"><i class="fa-regular fa-circle-down"></i> Install App</button>
+               <i class="fa-regular fa-user hbb"></i>
+                </div>
+
+            </div>
+           
+                <h2>
+                    Recently Played
+                </h2>
+                <div class="class-container">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/card1img.jpeg') }}" class="card-img" alt="">
+                        <p class="title">Top 50 - Global</p>
+                        <p class="info">your daily updates of the most playued...</p>
+                    </div>
+                </div>
+
+                <h2>
+                    Tranding now near you
+                </h2>
+                <div class="class-container">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/card2img.jpeg') }}" class="card-img" alt="">
+                        <p class="title">Top 50 - Global</p>
+                        <p class="info">your daily updates of the most playued...</p>
+                    </div>
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/card3img.jpeg') }}" class="card-img" alt="">
+                        <p class="title">Top 50 - Global</p>
+                        <p class="info">your daily updates of the most playued...</p>
+                    </div>
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/card4img.jpeg') }}" class="card-img" alt="">
+                        <p class="title">Top 50 - Global</p>
+                        <p class="info">your daily updates of the most playued...</p>
+                    </div>
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/card2img.jpeg') }}" class="card-img" alt="">
+                        <p class="title">Top 50 - Global</p>
+                        <p class="info">your daily updates of the most playued...</p>
+                    </div>
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/card3img.jpeg') }}" class="card-img" alt="">
+                        <p class="title">Top 50 - Global</p>
+                        <p class="info">your daily updates of the most playued...</p>
+                    </div>
+                </div>
+                <h2>
+                    Featured Chats
+                </h2>
+                <div class="class-container">
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/card5img.jpeg') }}" class="card-img" alt="">
+                        <p class="title">Top 50 - Global</p>
+                        <p class="info">your daily updates of the most playued...</p>
+                    </div>
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/card6img.jpeg') }}" class="card-img" alt="">
+                        <p class="title">Top 50 - Global</p>
+                        <p class="info">your daily updates of the most playued...</p>
+                    </div>
+                    <div class="card">
+                        <img src="{{ url_for('static', filename='images/card1img.jpeg') }}" class="card-img" alt="">
+                        <p class="title">Top 50 - Global</p>
+                        <p class="info">your daily updates of the most playued...</p>
+                    </div>
+                    
+                </div>
+                
+                <div class="f"><div class="line"></div></div>
+        </div>
+
+        <div class="footer">
+            <div class="album">
+                <div><img src="{{ url_for('static', filename='images/album_picture.jpeg') }}" alt=""></div>
+                <div class="sn">
+    <p style="font-size: 0.75rem;opacity: 1;"><span style="font-weight: 600;font-size: 1rem; ">Daylight</span><br>Lofi mix 1 - min music</p>
+                </div>
+                <img src="{{ url_for('static', filename='images/album_icon1.png') }}" style="height: 1.5rem;" alt="">
+
+            </div>
+            <div class="player">
+             <div class="player-controls">
+                 <img src="{{ url_for('static', filename='images/player_icon1.png') }}" class="player-control" alt="">
+                 <img src="{{ url_for('static', filename='images/player_icon2.png') }}" class="player-control" alt="">
+                 <img src="{{ url_for('static', filename='images/player_icon3.png') }}" class="player-control" style="opacity: 1; height: 2.2rem;" alt="">
+                 <img src="{{ url_for('static', filename='images/player_icon4.png') }}" class="player-control" alt="">
+                 <img src="{{ url_for('static', filename='images/player_icon5.png') }}" class="player-control" alt="">
+    
+             </div>
+             <div class="player-bar" >
+                 <span class="cur-time">0:00</span>
+                 <input type="range" min="0" max="100" class="progress-bar" name="" id="" step="1">
+                 <span class="tot-time">3:33</span>
+             </div>
+            </div>
+            <div class="control">
+
+           
+              <img src="controls_icon1.png" class="control-control1" alt="">
+                 <img src="{{ url_for('static', filename='images/controld_icon2.png') }}" class="control-control1" alt="">
+                 <img src="{{ url_for('static', filename='images/controls_icon3.png') }}" class="control-control2" alt="">
+                 <img src="{{ url_for('static', filename='images/controls_icon4.png') }}" class="control-control2" alt="">
+                 <img src="{{ url_for('static', filename='images/controls_icon5.png') }}" class="control-control1" alt="">
+                 <input type="range" class="control-control">
+                 <img src="{{ url_for('static', filename='images/album_icon2.png') }}" class="control-control1" alt="">
+
+                </div>
+         </div>
+        
+    </div>
+  
+</body>
+</html>
